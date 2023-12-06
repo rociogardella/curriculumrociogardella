@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+/*BARRA DE NAVEGACIÓN*/
+nav {
+
+    padding: 10px;
+    text-align: center;
+    height: 1vh;
+    justify-content: space-around;
+    font-family: 'Raleway';
+    font-weight: bold;
+    
+}
+
+/*BOTÓN*/
+a:hover{
+    color: aqua;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*TÍTULO*/
+h1 {
+    color: rgb(39, 36, 36);
+    font-size: 150px;
+    font-family: Agbalumo;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/*INICIO FOTO*/
+
+.fotoperfil{
+    border-radius: 100%
+  }
+  .fotoperfil{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .fotoperfil {
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+  }
+  .fotoperfil{
+      border: 10px solid #ffffff;
+      padding: 10px;
+      border-image: url(border.png) 30 round;
+  }
+  .fotoperfil{
+      width: 370px;
+      height: 370px;
+  }
+img {
+    width: 450px;
+    height: 450px;
+    margin-left: -0px;
+    margin-top: -30px;
+}
+
+/*FONDO*/
+body {
+    background-image: url(imagenes/fondo\ acua.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Carrusel*/
+
+.imagen {
+    width: 350px;
+    height: 200px;
+    margin: 0 5px;
+}
+
+.container {
+    max-width: 120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    padding: 100px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box:nth-child(1) {
+    grid-column-start: span 1;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 30px;
+    }
+
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+}
+
+nav {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Raleway';
+    text-decoration-thickness: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration-thickness: 5px;
+    text-align: center;
+}
+
+/*SUBTÍTULOS*/
+.subtitulo {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+/*PÁRRAFOS*/
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/*button styles*/
+
+.btn-up{
+    width: 50px;
+    height: 50px;
+    outline: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(161, 179, 233);
+    background-color: rgb(129, 161, 255);
+    position: fixed;
+    right: 20px;
+    left: 1245px;
+    bottom: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-arrow-up{
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.btn-up:hover{
+    opacity: .50;
+
+}
+
+.hide{
+    opacity: 2;
+}
+
+.active{
+    opacity: 3;
+}
+
+/*Link Behance*/
+.behance{
+    text-align: center;
+}
+
+/*Íconos*/
+.redes{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
